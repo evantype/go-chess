@@ -1,14 +1,34 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Guess the Number</title>
+    <title>Шашки</title>
+    <style>
+        /* Зачаток стилей для нашей игры */
+        #checkers-board {
+            display: grid;
+            grid-template-columns: repeat(8, 1fr);
+            grid-template-rows: repeat(8, 1fr);
+            width: 400px;
+            height: 400px;
+        }
+        .cell {
+            border: 1px solid #333;
+            width: 50px;
+            height: 50px;
+        }
+        .white {
+            background-color: #fff;
+        }
+        .black {
+            background-color: #000;
+        }
+    </style>
 </head>
 <body>
-<h1>Welcome to Guess the Number!</h1>
-<p>We've guessed a number between 1 and 10. Can you guess what it is?</p>
-<input id="guessInput" type="number" min="1" max="10">
-<button id="guessButton">Guess</button>
-<p id="result"></p>
-<script src="main.js"></script>
+<div id="checkers-board">
+    <!-- Здесь будут ячейки для игры в шашки -->
+</div>
+
+<script src="game.js"></script>
 </body>
 </html>
